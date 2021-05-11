@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <!-- Titles -->
+    <meta content="CEDARIS x DIGITAL" itemprop="name">
+
+    <!-- Descriptions -->
+    <meta content="CEDARIS x DIGITAL" name="description">
+
+    <title>CEDARIS x DIGITAL</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+            background: 0 0;
+            text-decoration: none;
+            outline: 0;
+            font-family: inherit;
+            font-size: inherit;
+            line-height: inherit;
+            font-weight: inherit;
+            color: inherit;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            font-feature-settings: "onum", "kern", "liga", "clig", "calt"
+        }
+
+        body, html {
+            width: 100%;
+            height: 100%;
+            background: #141414;
+            color: #e5e5e5;
+            font-family: Inter, sans-serif
+        }
+
+        body {
+            display: grid;
+            grid-template-rows:1fr auto
+        }
+
+        main {
+            padding: 0 50px;
+            align-self: center;
+            justify-self: center;
+            text-align: center
+        }
+
+        h1 {
+            font-variation-settings: 'wght' 600, 'slnt' 0;
+            font-size: 40px;
+            line-height: 60px
+        }
+
+        footer {
+            font-variation-settings: 'wght' 500, 'slnt' 0;
+            text-align: center;
+            padding: 30px 50px;
+            font-size: 14px;
+            color: #666
+        }
+        @media (max-width: 800px) {
+            h1 {
+                font-size: 30px;
+                line-height: 50px
+            }
+
+
+            footer {
+                font-size: 12px;
+                line-height: 30px
+            }
+        }
+    </style>
+</head>
+<body>
+<main>
+    <h1>Cedaris</h1>
+</main>
+<footer>
+    Busy
+</footer>
+</body>
+
+<script>
+    let footer_rotation =["Busy","Maybe later?","Is this an 8ball?", "Cedaris walks into a bar...", "email" ]
+
+    let x = setInterval(function() {document.querySelector("footer").innerHTML = footer_rotation[Math.floor(Math.random() * footer_rotation.length)]}, 1000);
+</script>
+</html>
